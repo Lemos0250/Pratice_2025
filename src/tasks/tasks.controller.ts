@@ -36,7 +36,7 @@ export class TasksController {
     console.log('Id: ', id);
     console.log('Body: ', body);
 
-    return 'Atualizando tarefa...';
+    return this.taskService.update(id, body);
   }
 
   @Delete(':id')
@@ -45,3 +45,7 @@ export class TasksController {
     return 'Deletar a tarefa com id' + id;
   }
 }
+
+/*
+2- Recebem as requisições HTTP (GET, POST, PUT, DELETE). Você define as rotas da sua API aqui.
+*/

@@ -13,7 +13,7 @@ export class TasksService {
   ]
 
   findAll() {
-    // eslint-disable-next-line @typescript-eslint/no-unsafe-return
+    
     return this.tasks;
   }
 
@@ -23,16 +23,20 @@ export class TasksService {
 
   create(body: any) {
     const newId = this.tasks.length + 1;
+
+    
     const newTask = {
       id: newId,
       ...body,
     };
 
-    console.log('Cadastrado com Sucesso')
-  
+    console.log('Cadastrado com Sucesso');
+
     this.tasks.push(newTask);
+
     
     return newTask;
   }
-  
+
+  update(id: string, body: any) {}
 }

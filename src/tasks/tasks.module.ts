@@ -8,3 +8,9 @@ import { TasksService } from './tasks.service';
   providers: [TasksService],
 })
 export class TasksModule {}
+
+/* 
+1- Pasta Module são pastas de funcionalidade. Cada módulo agrupa arquivos relacionados: controller, service, entidade, etc.
+2- Aqui você está importando o decorador @Module, que é o que transforma uma classe comum (no caso TasksModule) em um módulo do NestJS.
+
+*/

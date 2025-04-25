@@ -4,3 +4,7 @@ export class Task {
   description: string;
   completed: boolean;
 }
+
+/*
+1- Usados com ORMs (TypeORM, Prisma) pra definir como os dados são salvos no banco.
+*/
