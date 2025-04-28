@@ -40,3 +40,7 @@ export class TasksService {
 
   update(id: string, body: any) {}
 }
+
+/*
+1- Aqui é onde fica a lógica da aplicação. O controller chama o service, e o service faz o trabalho (ex: acessar banco, tratar dados).
+*/
